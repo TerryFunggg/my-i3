@@ -1,0 +1,63 @@
+conky.config = {
+  alignment = 'top_right',
+  background = true,
+  border_width = 0.5,
+  cpu_avg_samples = 4,
+  default_color = 'white',
+  default_outline_color = 'grey',
+  default_shade_color = 'black',
+  draw_borders = true,
+  draw_graph_borders = true,
+  draw_outline = false,
+  draw_shades = false,
+  use_xft = true,
+  font = 'OpenSans:size=10',
+  gap_x = 30,
+  gap_y = 60,
+  maximum_width = 300,
+  minimum_height = 5,
+  minimum_width = 5,
+  net_avg_samples = 2,
+  double_buffer = true,
+  out_to_console = false,
+  out_to_stderr = false,
+  extra_newline = false,
+  own_window = true,
+  own_window_type = 'override',
+  own_window_transparent = true,
+  own_window_colour = '000000',
+  own_window_argb_visual = true,
+  stippled_borders = 0,
+  update_interval = 1,
+  uppercase = false,
+  use_spacer = 'none',
+  show_graph_scale = false,
+  show_graph_range = false
+}
+
+conky.text = [[
+${voffset -50} 
+${color DimGray}
+${font}
+
+${font OpenSans:bold:size=10}${color f2e3db}SYSTEM ${color White} ${hr 2}
+$font${color White}$sysname $kernel $alignr $machine
+Frequency $alignr${freq_g cpu0}Ghz
+Uptime $alignr${uptime}
+File System $alignr${fs_type}
+
+${font OpenSans:bold:size=10}${color 41644a}TOP PROCESSES ${color White}${hr 2}
+${color White}$font${top_mem name 2}
+$font${top_mem name 3}
+$font${top_mem name 4}
+$font${top_mem name 5}
+
+${font OpenSans:bold:size=10}${color Tan2}NETWORK ${color White}${hr 2}
+$font${color White}IP Address: $alignr ${addr wlp1s0}
+${hr 2}
+Down $alignr ${downspeed wlp1s0} kb/s
+Up $alignr ${upspeed wlp1s0} kb/s
+${hr 2}
+]]
+
+
