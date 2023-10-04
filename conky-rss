@@ -35,9 +35,6 @@ conky.config = {
 }
 
 conky.text = [[
-${font OpenSans:bold:size=10}${color Tan2}HACKER NEWS ${color White} ${hr 2}
-${font OpenSans:size=10}${texeci 100 cat /tmp/rss/hackerNews }
-
 ${font OpenSans:bold:size=10}${color f24c3d}YOUTUBE ${color White} ${hr 2}
 ${font OpenSans:size=10}${texeci 100 cat /tmp/rss/grainydays }
 ${texeci 100 cat /tmp/rss/overthink }
