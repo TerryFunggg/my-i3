@@ -1,0 +1,41 @@
+conky.config = {
+  alignment = 'bottom_right',
+  background = true,
+  border_width = 0.5,
+  cpu_avg_samples = 4,
+  default_color = 'white',
+  default_outline_color = 'grey',
+  default_shade_color = 'black',
+  draw_borders = true,
+  draw_graph_borders = true,
+  draw_outline = false,
+  draw_shades = false,
+  use_xft = true,
+  font = 'OpenSans:size=10',
+  gap_x = 30,
+  gap_y = 40,
+  minimum_height = 5,
+  minimum_width = 5,
+  maximum_width = 500,
+  net_avg_samples = 2,
+  double_buffer = true,
+  out_to_console = false,
+  out_to_stderr = false,
+  extra_newline = false,
+  own_window = true,
+  own_window_type = 'override',
+  own_window_transparent = true,
+  own_window_colour = '000000',
+  stippled_borders = 0,
+  update_interval = 1,
+  uppercase = false,
+  use_spacer = 'none',
+  show_graph_scale = false,
+  show_graph_range = false
+}
+
+conky.text = [[
+${font OpenSans:bold:size=10}${color d63a4d}KeyMap ${color White} ${hr 2}
+${font OpenSans:size=10}${texeci 10000 cat ~/.i3/keymap}
+]]
+

@@ -70,8 +70,8 @@ bindsym $mod+Right focus right
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+i move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -153,7 +153,7 @@ bindsym $mod+Shift+n exec ~/.i3/bin/tags temp-move
 bindsym $mod+apostrophe exec i3-input -F "exec sh -c 'sleep %s && notify-send Remember-%ss-ago!'" -P 'Remind after: '
 # [move to] new workspace
 #bindsym $mod+; exec i3-input -F "workspace \"%s\"" -P 'Workspace: '
-bindsym $mod+Shift+i exec i3-input -F "move container to workspace \"%s\"" -P 'Move to workspace: '
+#bindsym $mod+Shift+i exec i3-input -F "move container to workspace \"%s\"" -P 'Move to workspace: '
 # mark container
 bindsym $mod+m exec i3-input -F 'mark %s' -P 'Mark name: '
 bindsym $mod+Shift+m exec i3-input -F '[con_mark=%s] focus' -P 'Go to mark: '
@@ -305,6 +305,7 @@ exec --no-startup-id feh --bg-fill --randomize  ~/.wallpaper/
 exec --no-startup-id conky -d -c ~/.i3/conky-right
 exec --no-startup-id conky -d -c ~/.i3/conky-left
 exec --no-startup-id conky -d -c ~/.i3/conky-rss
+exec --no-startup-id conky -d -c ~/.i3/conky-keymap
 # exec --no-startup-id conky -d -c ~/.i3/conky-bottom
 exec --no-startup-id ~/.i3/bin/bar
 exec --no-startup-id ~/.i3/bin/xinput-fix

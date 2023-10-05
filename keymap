@@ -1,0 +1,24 @@
+$mod+Return: alacritty
+$mod+q:	     Quite app
+$mod+d:	     dmenu_run
+------------------------------
+$mod+Tab:    Switch Workspace
+$mod+x:	     Border Toggle
+$mod+h:      Split h
+$mod+v:      Split v
+------------------------------
+$mod+f:           Fullscreen
+$mod+s:           Layout stacking
+$mod+w:           Layout tabbed
+$mod+e:           Layout toggle split
+$mod+space:       Focus mode_toggle
+------------------------------
+$mod+j:      focus left
+$mod+k:      focus down
+$mod+i:      focus up
+$mod+l:      focus right
+
+$mod+Shift+j: move left
+$mod+Shift+k: move down
+$mod+Shift+i: move up
+$mod+Shift+l: move right
